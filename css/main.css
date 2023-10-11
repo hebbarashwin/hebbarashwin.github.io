@@ -2,17 +2,18 @@
 body {
   font-size: 16px;
   font-family: "Open Sans", Arial, sans-serif;
-  background: #FFFFFF;
+  background: #FAF3E0;  /* Soft beige */
 }
 
 /* Colors */
 .dark-blue {
-  color: #20364c !important;
+  color: #C04000 !important; /* Deep orange for contrast */
 }
 
+
 #badge-more {
-  background-color: #1585cf;
-  color: white;
+  background-color: #D35400;
+  color: #FAF3E0; /* Soft beige */
   cursor: pointer;
 }
 
@@ -38,7 +39,7 @@ body {
 /* Typography */
 h1, h2, h3, h4, h5, h6 {
   font-family: "Montserrat", Helvetica, sans-serif;
-  color: #20364c;
+  color: #D35400; /* Pumpkin orange for headers */
   font-weight: 500;
 }
 
@@ -81,9 +82,10 @@ dt {
 }
 
 blockquote {
-  border-left-color: slategray;
-  color: slategray;
+  border-left-color: #C04000; /* Deep orange for blockquote lines */
+  color: #8E572B;  /* Warm brown for blockquote text */
 }
+
 
 blockquote blockquote {
   border-left: none;
@@ -121,12 +123,13 @@ blockquote footer {
 
 /* Links */
 #main-container a {
-  color: #000000;
+  color: #008080;
+  /* color: #008080; */
 /*   font-weight: 500; */
 }
 
 #main-container a:hover {
-  color: #000000;
+  color: #005656;
 /*   border-bottom: 1px dashed #1585cf; */
   text-decoration: none;
   padding-bottom: 2px;
@@ -134,7 +137,7 @@ blockquote footer {
 
 /* Contact info area, index.html page ------------------------------------------------- */
 #title {
-  color: #20364c;
+  color: #D35400; /* Pumpkin orange */
   margin-top: 2rem;
   font-weight: 600;
   font-size: 1.4rem;
@@ -192,7 +195,7 @@ nav {
     vertical-align: bottom;
     -webkit-transform: perspective(1px) translateZ(0);
     transform: perspective(1px) translateZ(0);
-    box-shadow: none /*0 0 1px rgba(0, 0, 0, 0); */
+    box-shadow: none; /*0 0 1px rgba(0, 0, 0, 0); */
     position: relative;
   }
 
@@ -225,14 +228,15 @@ nav {
 }
 
 .navbar-inverse {
-  background: #20364c;
+  background: #C04000; /* Deep orange for navbar */
 }
 
 .navbar-brand {
   font-size: 2.15rem !important;
   font-weight: 500;
-  color: white !important;
+  color: #FAF3E0 !important; /* Soft beige */
 }
+
 
 /* Navbar link size */
 .navbar-default .navbar-nav>li>a {
@@ -317,7 +321,7 @@ h3 {
 }
 
 h3 span {
-  background-color: white;
+  background-color: #FAF3E0;
   padding-right: 10px;
 }
 
@@ -496,8 +500,8 @@ dd {
   z-index: 99;
   border: none;
   outline: none;
-  background-color: #1585cf;
-  color: white;
+  background-color: #D35400;
+  color: #FAF3E0;  /* Soft beige */
   padding: 12px 6px 12px 6px;
   border-radius: 4px 0 0 4px;
   cursor: pointer;
@@ -505,6 +509,125 @@ dd {
 }
 
 #topper:hover {
-  background-color: #1585cf;
-  opacity: .8;
+  background-color: #C04000;  /* Deep orange */
+}
+
+.news-card {
+  display: flex;
+  align-items: flex-start; /* Adjusted from center to flex-start */
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  border-left: 4px solid #D35400; /* Pumpkin orange border */
+  background-color: #FAE5D3; /* Soft orange-white background */
+  transition: background-color 0.3s;
+}
+
+.news-card:hover {
+  background-color: #FAF3E0; /* Soft beige background on hover */
+}
+
+.news-date {
+  font-weight: bold;
+  color: #C04000; /* Deep orange */
+  flex: 0 0 160px; /* Fix width to fit the longest date, adjust as needed */
+  padding-top: 2px; /* Adjust top padding for better alignment with the icon */
+}
+
+.news-icon {
+  margin-right: 5px;
+  vertical-align: middle; /* Aligns the icon vertically in the middle */
+}
+
+
+.contact-card {
+  padding: 20px;
+  background-color: #FAE5D3; /* Soft orange-white */
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+  margin-bottom: 20px;
+}
+
+.contact-card a {
+  color: #D35400; /* Pumpkin orange */
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.contact-card a:hover {
+  color: #C04000; /* Slightly darker shade for hover */
+}
+
+.contact-item, .education-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.icon-holder {
+  flex: 0 0 30px;  /* Adjust this if your icon is bigger */
+  margin-right: 15px;
+}
+
+.education-card {
+  background: #FAE5D3; /* Soft orange-white */
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+}
+
+.education-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 10px;
+}
+
+.date {
+  width: 18%;
+  color: #D35400; /* Pumpkin orange color */
+  font-weight: bold;
+}
+
+.separator {
+  width: 3%;
+}
+
+.education-icon {
+  color: #D35400; /* Pumpkin orange color */
+  margin-right: 8px;
+}
+
+.university {
+  color: gray;
+  font-style: italic;
+}
+
+.education-item td {
+  vertical-align: middle;
+  padding: 8px 0;
+}
+
+.bio-panel {
+  background: #FAE5D3; /* Soft orange-white */
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+}
+
+.bio-panel h3 span {
+  background-color: #FAF3E0;
+  padding-right: 10px;
+}
+
+.bio-panel h3:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 0.5em;
+  border-top: 2px solid #D35400;
+  z-index: -1;
 }

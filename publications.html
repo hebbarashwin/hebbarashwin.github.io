@@ -27,7 +27,7 @@
   <meta name="msapplication-wide310x150logo" content="favicons/brain_310x150.png" />
   <meta name="msapplication-square310x310logo" content="favicons/brain_310x310.png" />
   <!-- <meta name="msapplication-TileColor" content="#ffffff"> -->
-  <meta name="application-name" content="Surabhi S Nath" />
+  <meta name="application-name" content="S Ashwin Hebbar" />
   <!-- <meta name="msapplication-TileImage" content="favicons/brain_152x152.png"> -->
   <!-- <meta name="theme-color" content="#ffffff"> -->
 
@@ -52,6 +52,16 @@
 
 <style>
    /* Additional styles */
+
+   #publications a {
+    color: #FAE5D3;  /* This will make the link color the same as the surrounding text color. */
+   }
+
+   #publications a:hover {
+      color: #D35400;  /* Same for hover state, or choose another color if preferred. */
+      text-decoration: underline;  /* If you want to add underline on hover. */
+}
+
    .publication-card {
        border: 1px solid #e3e3e3;
        padding: 15px;
@@ -74,7 +84,7 @@
    }
 
    .author-highlight {
-       color: #D35400;  /* You can change this color */
+       color: #C04000;  /* You can change this color */
        font-weight: 600;
    }
 
@@ -147,6 +157,16 @@ h1 {
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
 }
 
+a {
+   color: #5C4D7D;  /* or #8A3333 for Burnt Sienna */
+   transition: color 0.3s ease;  /* This ensures a smooth color transition on hover */
+}
+
+a:hover {
+   color: #3A2C4D;  /* or #681F1F for Burnt Sienna's hover state */
+   text-decoration: none;
+}
+
 
 /* Enhanced button styles */
 .links {
@@ -197,6 +217,17 @@ h1 {
         margin-right: 5px;
     }
 }
+
+.link-to-docs {
+    color: #673147;  
+    transition: color 0.3s ease;  
+}
+
+.link-to-docs:hover {
+    color: #451B29; 
+    text-decoration: none;
+}
+
 </style>
 
 
@@ -214,7 +245,7 @@ h1 {
    <div class="spacer-div-3 hidden-xs hidden-xs"></div>
 
    <!-- Main content    -->
-   <div id="main-container" class="container">
+   <div id="publications" class="container">
 
       <div class="row">
          <div class="col-sm-12">
@@ -229,6 +260,9 @@ h1 {
                    <a id="link-to-docs" role="button" class="btn btn-links" href="https://arxiv.org/abs/2307.16562" target="_blank">
                        <i class="far fa-file-pdf fa-fw" aria-hidden="true"></i> Paper
                    </a>
+                   <a id="link-to-docs" role="button" class="btn btn-links" href="https://www.youtube.com/watch?v=J5OmmgAdNg8&t=23959s" target="_blank">
+                     <i class="fas fa-microphone fa-fw" aria-hidden="true"></i> Talk
+                 </a>
                </div>
                <p class="author-note"><sup>*</sup>Authors are listed in alphabetical order.</p>                 
            </div>
