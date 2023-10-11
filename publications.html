@@ -64,6 +64,107 @@
 
    </style>
 
+<!-- ... Previous code ... -->
+
+<style>
+   /* Additional styles */
+   .publication-card {
+       border: 1px solid #e3e3e3;
+       padding: 15px;
+       margin-bottom: 20px;
+       border-radius: 5px;
+       transition: box-shadow 0.3s, transform 0.3s;
+       background-color: #FAE5D3;  /* subtle background color for the card */
+   }
+
+   .publication-card:hover {
+       box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+       transform: translateY(-5px);
+   }
+
+   .publication-title {
+    font-size: 1.5em; /* Increased size */
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #D35400;
+   }
+
+   .author-highlight {
+       color: #D35400;  /* You can change this color */
+       font-weight: 600;
+   }
+
+   .links {
+       margin-top: 15px;
+   }
+
+   .links a {
+       margin-right: 20px; /* increased spacing */
+       background-color: #d17f1b; /* background color for the link */
+       color: white;
+       padding: 8px 12px;
+       border-radius: 4px;
+       transition: background-color 0.3s;
+       border: 1px solid #e06b0b;  /* Add border to the links for more style */
+   }
+
+   .links a:hover {
+       background-color: #e74509; /* slightly darker shade on hover */
+   }
+
+   .author-note {
+    font-size: 0.8em;
+    margin-top: 12px;
+    color: #777; /* A softer color for the note to ensure it's informative but not dominating */
+}
+
+.thesis-section {
+    background-color: #FAE5D3; /* Soft orange-white from our warm scheme */
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.thesis-card {
+    padding: 20px;
+}
+
+.thesis-title {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    font-weight: 600;
+    color: #D35400; /* Pumpkin orange from our warm scheme */
+}
+
+.thesis-details {
+    margin-bottom: 20px;
+    font-size: 1.1em;
+}
+
+.btn-thesis {
+    background-color: #D35400; /* Pumpkin orange */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1em;
+    transition: 0.3s;
+}
+
+.btn-thesis:hover, .btn-thesis:focus {
+    background-color: #B24700; /* Slightly darker shade for hover */
+    color: white;
+    text-decoration: none;
+}
+
+</style>
+
+
+
+
+
+
 </head>
 
 <body>
@@ -78,79 +179,131 @@
 
       <div class="row">
          <div class="col-sm-12">
-            <h1>Publications</h1>
-            <!--
-            <p>I favor a {DESCRIBE MAIN THEORETICAL/METHODOLOGICAL APPROACH IN 1 SENTENCE}.</p>
+             <h1>Publications</h1>
+     
+             <!-- Example of a single publication card -->
+             <div class="publication-card">
+                 <div class="publication-title">
+                     SAKSHI: Decentralized AI Platforms <sup>*</sup>
+                 </div>
+                 S. Bhat, C. Chen, Z. Cheng, Z. Fang, <span class="author-highlight">A. Hebbar</span>, S. Kannan, R. Rana, P. Sheng, H. Tyagi, P. Viswanath, and X. Wang, <i>Preprint, 2023</i>
+                 <div class="links">
+                     <!-- PDF Link -->
+                     <a href="https://arxiv.org/abs/2307.16562" target="_blank"><i class="far fa-file-pdf"></i> Paper</a>
+                     <!-- Code Link (you can replace # with actual code link) -->
+                     <!-- <a href="#" target="_blank"><i class="fas fa-code"></i> Code</a> -->
+                 </div>
+                 <p class="author-note"><sup>*</sup>Authors are listed in alphabetical order.</p>                 
+             </div>
 
-            <p>My {PHD|MS|MA} work in the {DEPARTMENT} at {UNIVERSITY} was on {AREAS OF RESEARCH} where I {DESRCRIBE WHAT YOU STUDIED IN 1 OR 2 SENTENCES}. I apply my learning to the classroom by integrating it into the {SPECIFIC COURSE} course, creating a more realistic and authentic experience.</p>
+            <!-- CRISP: Curriculum based Sequential Neural Decoders for Polar Code Family -->
+            <div class="publication-card">
+               <div class="publication-title">
+                  CRISP: Curriculum based Sequential Neural Decoders for Polar Code Family
+               </div>
+               <span class="author-highlight">S. A. Hebbar</span>, V. Nadkarni, A. V. Makkuva, S. Bhat, S. Oh, and P. Viswanath
+               <div class="conference-year"><i>International Conference on Machine Learning (ICML), 2023</i></div>
+               <div class="links">
+                  <a href="https://arxiv.org/abs/2210.00313" target="_blank"><i class="far fa-file-pdf"></i> Paper</a>
+                  <a href="https://github.com/hebbarashwin/neural_polar_decoder" target="_blank"><i class="fas fa-code"></i> Code</a>
+               </div>
+            </div>
 
-            <p>I focus specifically in these areas:</p>
-            -->
-            
-            <!-- List of Research interests -->
-            <!--
-            <ul class="push-down-1">
-               <li><em>{AREA 1}</em>&mdash;{BRIEF DESCRIPTION OF AREA}</li>
-               <li><em>{AREA 2}</em>&mdash;{BRIEF DESCRIPTION OF AREA}</li>
-               <li><em>{AREA 3}</em>&mdash;{BRIEF DESCRIPTION OF AREA}</li>
-               <li><em>{AREA 4}</em>&mdash;{BRIEF DESCRIPTION OF AREA}</li>
-               <li><em>{AREA 5}</em>&mdash;{BRIEF DESCRIPTION OF AREA}</li>
-               <li><em>{AREA 6}</em>&mdash;{BRIEF DESCRIPTION OF AREA}</li>
-            </ul>
-            -->
-    
-            <!-- Publication -->
-            
-            <!-- <h3 class="push-down-4"><span>Select Publications</span></h3> -->
+            <!-- Compressed Error HARQ: Feedback Communication on Noise-Asymmetric Channels -->
+            <div class="publication-card">
+               <div class="publication-title">
+                  Compressed Error HARQ: Feedback Communication on Noise-Asymmetric Channels
+               </div>
+               S. K. Ankireddy, <span class="author-highlight">S. A. Hebbar</span>, Y. Jiang, H. Kim, and P. Viswanath
+               <div class="conference-year"><i>IEEE International Symposium on Information Theory (ISIT), 2023</i></div>
+               <div class="links">
+                  <a href="https://arxiv.org/abs/2302.10170" target="_blank"><i class="far fa-file-pdf"></i> Paper</a>
+                  <a href="https://github.com/sravan-ankireddy/ce-harq" target="_blank"><i class="fas fa-code"></i> Code</a>
+               </div>
+            </div>
+
+            <!-- TinyTurbo: Efficient Turbo Decoders on Edge -->
+            <div class="publication-card">
+               <div class="publication-title">
+                  TinyTurbo: Efficient Turbo Decoders on Edge
+               </div>
+               <span class="author-highlight">S. A. Hebbar</span>, R. K. Mishra, S. K. Ankireddy, A. V. Makkuva, H. Kim, and P. Viswanath
+               <div class="conference-year"><i>IEEE International Symposium on Information Theory (ISIT), 2022</i></div>
+               <div class="links">
+                  <a href="https://arxiv.org/abs/2209.15614" target="_blank"><i class="far fa-file-pdf"></i> Paper</a>
+                  <a href="https://github.com/hebbarashwin/tinyturbo" target="_blank"><i class="fas fa-code"></i> Code</a>
+               </div>
+            </div>
+
+            <!-- Vocal Tract Articulatory Contour Detection in Real-Time Magnetic Resonance Images Using Spatio-Temporal Context -->
+            <div class="publication-card">
+               <div class="publication-title">
+                  Vocal Tract Articulatory Contour Detection in Real-Time Magnetic Resonance Images Using Spatio-Temporal Context
+               </div>
+               <span class="author-highlight">S. A. Hebbar</span>, R. Sharma, K. Somandepalli, A. Toutios, and S. Narayanan
+               <div class="conference-year"><i>IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), 2020</i></div>
+               <div class="links">
+                  <a href="https://ieeexplore.ieee.org/abstract/document/9053111" target="_blank"><i class="far fa-file-pdf"></i> Paper</a>
+                  <!-- <a href="#" target="_blank"><i class="fas fa-code"></i> Code</a> -->
+               </div>
+            </div>
+     
+            <div class="thesis-section">
+               <h3 class="push-down-3">Master's Thesis</h3>
+               
+               <!-- Master's Thesis Card -->
+               <div class="thesis-card">
+                   <div class="thesis-title">Channel Decoding via Machine Learning</div>
+                  <!-- University and Year -->
+                  <div class="thesis-university">University of Illinois, Urbana-Champaign, 2022</div>
+                  
+                  <div class="thesis-details">
+                        <b>Advisor:</b> <a href="http://pramodv.ece.illinois.edu/" target="_blank">Prof. Pramod Viswanath</a>
+                  </div>
+                   
+                   <!-- Uncomment if you want to display an abstract -->
+                   <!-- 
+                   <div class="thesis-abstract">
+                       <blockquote align="justify">
+                           Error-correcting codes (codes) are the backbone of the modern information
+                           age and were essential to the invention of groundbreaking technology such
+                           as WiFi, cellular, cable, and satellite modems. In this thesis, we focus on
+                           using machine learning techniques to design efficient and reliable data-driven
+                           decoders for state-of-the-art channel codes.
+                           In the first half of the thesis, we introduce a neural-augmented decoder for
+                           Turbo codes called TinyTurbo. TinyTurbo has complexity comparable
+                           to the classical max-log-MAP algorithm but has much better reliability than
+                           the max-log-MAP baseline and performs close to the MAP algorithm. We
+                           show that TinyTurbo exhibits strong robustness on a variety of practical
+                           channels of interest, such as EPA and EVA channels, which are included in
+                           the LTE standards. We also show that TinyTurbo strongly generalizes
+                           across different rate, blocklengths, and trellises.
+                           In the second half of the thesis, we focus on designing data-driven de-
+                           coders for the polar code family: Polar codes and PAC codes. We pose
+                           the decoding of PAC codes as a tree-search problem, and introduce PAC-
+                           DQN, a reinforcement learning based decoder. While PAC-DQN achieves a
+                           near-optimal reliability for short codes, it suffers from poor training sample
+                           complexity and is not scalable to larger codes. We then introduce CRISP,
+                           a GRU-powered neural decoder, which uses curriculum learning to achieve
+                           excellent reliability and scale to larger codes. We show that CRISP out-
+                           performs the successive-cancellation (SC) decoder and attains near-optimal
+                           reliability performance on the Polar(16, 32), Polar(22, 64) and PAC(16, 32)
+                           codes.                       
+                        </blockquote>
+                   </div>
+                   -->
            
-
-            <ul class="publications">
-               <li align="justify"><a href="https://ieeexplore.ieee.org/abstract/document/9834589" target="_blank"><b>S. A. Hebbar</b>, R. K. Mishra, S. K. Ankireddy, A. V. Makkuva, H. Kim and P. Viswanath, "TinyTurbo: Efficient Turbo Decoders on Edge," <i> IEEE International Symposium on Information Theory (ISIT)</i>, 2022</a></li>
-               <li align="justify"><a href="https://ieeexplore.ieee.org/abstract/document/9053111" target="_blank"><b>S. A. Hebbar</b>, R. Sharma, K. Somandepalli, A. Toutios and S. Narayanan, "Vocal Tract Articulatory Contour Detection in Real-Time Magnetic Resonance Images Using Spatio-Temporal Context," <i> IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP) </i>, 2020</a></li>
-             </ul>
-            
-            <!-- Dissertation abstract -->
-            <h3 class="push-down-3"><span>Masters Thesis</span></h3>
-            <p><b>Title</b>: Channel Decoding via Machine Learning</p>
-            <p><b>Advisor</b>: <a href="http://pramodv.ece.illinois.edu/" target="_blank">Prof. Pramod Viswanath</a></p>
-            <!-- Sample quote from the dissertation -->
-            <!-- <blockquote align="justify"> Error-correcting codes (codes) are the backbone of the modern information
-age and were essential to the invention of groundbreaking technology such
-as WiFi, cellular, cable, and satellite modems. In this thesis, we focus on
-using machine learning techniques to design efficient and reliable data-driven
-decoders for state-of-the-art channel codes.
-In the first half of the thesis, we introduce a neural-augmented decoder for
-Turbo codes called TinyTurbo. TinyTurbo has complexity comparable
-to the classical max-log-MAP algorithm but has much better reliability than
-the max-log-MAP baseline and performs close to the MAP algorithm. We
-show that TinyTurbo exhibits strong robustness on a variety of practical
-channels of interest, such as EPA and EVA channels, which are included in
-the LTE standards. We also show that TinyTurbo strongly generalizes
-across different rate, blocklengths, and trellises.
-In the second half of the thesis, we focus on designing data-driven de-
-coders for the polar code family: Polar codes and PAC codes. We pose
-the decoding of PAC codes as a tree-search problem, and introduce PAC-
-DQN, a reinforcement learning based decoder. While PAC-DQN achieves a
-near-optimal reliability for short codes, it suffers from poor training sample
-complexity and is not scalable to larger codes. We then introduce CRISP,
-a GRU-powered neural decoder, which uses curriculum learning to achieve
-excellent reliability and scale to larger codes. We show that CRISP out-
-performs the successive-cancellation (SC) decoder and attains near-optimal
-reliability performance on the Polar(16, 32), Polar(22, 64) and PAC(16, 32)
-codes.
-            </blockquote> -->
-            
-            <!-- Read More Button -- link to the dissertation -->
-            <p class="text-left">
-               <a id="link-to-docs" role="button" class="btn btn-default" href="https://www.ideals.illinois.edu/items/125386" target="_blank">
-                  <i class="far fa-file-pdf fa-fw" aria-hidden="true"></i>&nbsp; Read
-               </a>
-            </p>
-
-
+                   <!-- Read More Button -- link to the dissertation -->
+                   <div class="thesis-links">
+                       <a id="link-to-docs" role="button" class="btn btn-thesis" href="https://www.ideals.illinois.edu/items/125386" target="_blank">
+                           <i class="far fa-file-pdf fa-fw" aria-hidden="true"></i> Read Thesis
+                       </a>
+                   </div>
+               </div>
+           </div>
+           
          </div>
-      </div>
-
+     </div>
    </div>
 
    <!-- Back-to-top button -->
