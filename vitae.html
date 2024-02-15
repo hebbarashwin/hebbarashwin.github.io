@@ -72,6 +72,7 @@
 </style>
 </head>
 
+
 <body>
 
    <!-- navbar include -->
@@ -84,13 +85,24 @@
 
       <div class="row">
          <div class="col-sm-12">
+            <script>
+               // Define the CV link
+               var cvLink = "https://drive.google.com/file/d/1M0lYYwjeUGSCkT5T4sgOWGAI-KWUi7vo/preview";
+               var downloadLink = cvLink.replace("/preview", "/uc?export=download");
+           </script>
 
            <h1>Curriculum Vitae</h1>
 
-            <p>Last updated August 2022</p>
+            <p>CV last updated November 2023</p>
 
-            <iframe sandbox="allow-same-origin allow-scripts allow-top-navigation" width='100%' height='750px' frameborder='0' scrolling='yes' class='embed-responsive-item' src="https://drive.google.com/file/d/1M0lYYwjeUGSCkT5T4sgOWGAI-KWUi7vo/preview"></iframe>
+            <!-- <iframe sandbox="allow-same-origin allow-scripts allow-top-navigation" width='100%' height='750px' frameborder='0' scrolling='yes' class='embed-responsive-item' src="https://drive.google.com/file/d/1M0lYYwjeUGSCkT5T4sgOWGAI-KWUi7vo/preview"></iframe> -->
+            <!-- CV Iframe -->
+            <iframe id="cvIframe" sandbox="allow-same-origin allow-scripts allow-top-navigation" width='100%' height='750px' frameborder='0' scrolling='yes' class='embed-responsive-item'></iframe>
 
+            <!-- Download CV Button -->
+            <!-- <div style="margin-top: 20px;">
+               <a id="downloadCvButton" href="#" class="btn btn-primary" download="S_Ashwin_Hebbar_CV.pdf">Download CV</a>
+            </div> -->
          </div>
       </div>
 
